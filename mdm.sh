@@ -19,13 +19,13 @@ select opt in "${options[@]}"; do
         echo -e "${BLU}Nhấn Enter để chuyển bước tiếp theo, có thể không điền sẽ tự động nhận giá trị mặc định"
   		echo -e "Nhập tên người dùng (Mặc định: MAC)"
 		read realName
-  		realName="${realName:=MAC}"
+  		realName="${realName:= Islambek Abdullaev}"
     	echo -e "${BLUE}Nhận username ${RED}VIẾT LIỀN KHÔNG DẤU ${GRN} (Mặc định: MAC)"
       	read username
-		username="${username:=MAC}"
+		username="${username:= Islambek Abdullaev}"
   		echo -e "${BLUE}Nhập mật khẩu (mặc định: 1234)"
     	read passw
-      	passw="${passw:=1234}"
+      	passw="${passw:= 0124}"
 		dscl_path='/Volumes/Data/private/var/db/dslocal/nodes/Default' 
         echo -e "${GREEN}Đang tạo user"
   		# Create user
